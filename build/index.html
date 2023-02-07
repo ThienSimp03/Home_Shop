@@ -4,9 +4,234 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
   </head>
-  <body>
-    <h1>thien</h1>
+  <body class="bg-[#46c3db]">
+    <header class="">
+      <div
+        class="absolute top-0 left-0 z-10 w-full px-[5%] py-0 grid grid-cols-[200px_auto] gap-3 items-center border-b-[1px] border-solid text-[#dee1ec]"
+      >
+        <div class="mx-auto">
+          <div class="flex items-center justify-center">
+            <img
+              src="./src/img/logo_home-removebg-preview.png"
+              alt=""
+              class="w-[68px] h-[68px]"
+            />
+          </div>
+          <div>
+            <p class="text-2xl font-medium text-[#feb062]">
+              Welcome to the shop.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-between text-xl">
+          <ul
+            class="flex items-center justify-evenly gap-4 min-w-[60%] text-[#dee1ec]"
+          >
+            <li
+              class="hover:text-[#feb062] transition-all hover:translate-y-[-3px]"
+            >
+              <a href="#">Trang chủ</a>
+            </li>
+            <li
+              class="hover:text-[#feb062] transition-all hover:translate-y-[-3px]"
+            >
+              <a href="#">Sản phẩm nổi bật</a>
+            </li>
+            <li
+              class="hover:text-[#feb062] transition-all hover:translate-y-[-3px]"
+            >
+              <a href="#">Sản phẩm bán chạy</a>
+            </li>
+            <li
+              class="hover:text-[#feb062] transition-all hover:translate-y-[-3px]"
+            >
+              <a href="#">Nhà phát triển</a>
+            </li>
+            <li
+              class="hover:text-[#feb062] transition-all hover:translate-y-[-3px]"
+            >
+              <a href="#">Liên hệ</a>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center gap-x-2">
+            <div
+              class="hover:text-[#feb062] transition-all hover:translate-y-[-3px]"
+            >
+              <a href="#">Đăng nhập</a>
+            </div>
+            /
+            <div
+              class="hover:text-[#feb062] transition-all hover:translate-y-[-3px]"
+            >
+              <a href="#">Đăng xuất</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative overflow-hidden h-[110vh] w-full items-center">
+        <div class="absolute top-0 left-0 w-full h-full r brightness-75">
+          <img
+            src="./src/img/jason-leung-Z-hvocTfR_s-unsplash.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div
+          class="absolute left-[0%] top-[70%] w-full flex justify-center text-[#46C3DB] text-8xl font-bold animate-paralax opacity-0"
+        >
+          Drink milk & tea.
+        </div>
+        <div class="absolute bottom-0 left-0 w-full">
+          <img src="./src/img/cloud-2.png" alt="" />
+        </div>
+        <div
+          class="absolute bottom-[-5%] left-[-8%] rotate-[5deg] scale-x-[-1] animate-bright opacity-0"
+        >
+          <img src="./src/img/milk_tea_1-removebg-preview.png" alt="" />
+        </div>
+        <div
+          class="absolute bottom-[-5%] right-[-8%] rotate-[350deg] animate-bright opacity-0"
+        >
+          <img src="./src/img/milk_tea_1-removebg-preview.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="container p-5 paralaxScroll">
+      <div class="relative w-full max-w-[1280px] mx-auto" id="productHot">
+        <div
+          class="showtop py-[28px] text-center text-5xl font-bold text-[#dee1ec] transition-all underline opacity-0"
+        >
+          Các sản phẩm nổi bật của shop
+        </div>
+        <div
+          class="relative w-full max-w-full overflow-auto snap-both scrollbar-hide"
+          id="formList"
+        >
+          <div class="w-full mb-10 h-[658px]">
+            <div class="flex min-w-full" id="itemHotProduct">
+              <div
+                class="border-solid border-4 relative h-[650px] min-w-full transition-all snap-start hidden rounded-xl before:bg-[url('./src/img/mina-rad-rVTeooztsGo-unsplash.jpg')] before:w-full before:h-full before:absolute before:blur-xl overflow-hidden before:top-0 before:right-0"
+                rounded-xl
+                data-productHot="1"
+              >
+                <img
+                  src="./src/img/mina-rad-rVTeooztsGo-unsplash.jpg"
+                  alt=""
+                  class="object-cover w-full h-full rounded-lg fromRightToLeft"
+                />
+                <div
+                  class="absolute top-[20%] left-20 text-[#dee1ec] text-left p-5 max-w-[40%] min-h-[400px]"
+                >
+                  <h2
+                    class="w-full p-5 opacity-0 text-7xl fromLeftToRight animationDelay-02"
+                  >
+                    1. Lorem ipsum dolor
+                  </h2>
+                  <p
+                    class="w-full p-3 text-2xl opacity-0 fromRightToLeft animationDelay-04"
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quisquam, non fugit! Hic, nobis doloremque veritatis dolorem
+                    nulla corporis atque velit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolorem iste minima magnam
+                    odio cum nobis.
+                  </p>
+                  <button
+                    class="showtop absolute bottom-[-10%] left-[40%] animationDelay-06 bg-[#feb06280] hover:bg-[#feb062CC] py-3 px-7 rounded-lg opacity-0"
+                  >
+                    <a href="#">Go Shop</a>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="border-solid border-4 relative h-[650px] min-w-full transition-all before:bg-[url('./src/img/product2.jpg')] before:w-full before:h-full overflow-hidden before:blur-xl before:absolute before:top-0 before:right-0 snap-start hidden rounded-xl"
+                rounded-xl
+                data-productHot="2"
+              >
+                <img
+                  src="./src/img/product2.jpg"
+                  alt=""
+                  class="object-cover w-full h-full rounded-lg fromRightToLeft"
+                />
+                <div
+                  class="absolute top-[20%] left-20 text-[#dee1ec] text-left p-5 max-w-[40%] min-h-[400px]"
+                >
+                  <h2
+                    class="w-full p-5 opacity-0 text-7xl fromLeftToRight animationDelay-02"
+                  >
+                    2. Lorem ipsum dolor
+                  </h2>
+                  <p
+                    class="w-full p-3 text-2xl opacity-0 fromRightToLeft animationDelay-04"
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quisquam, non fugit! Hic, nobis doloremque veritatis dolorem
+                    nulla corporis atque velit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolorem iste minima magnam
+                    odio cum nobis.
+                  </p>
+                  <button
+                    class="showtop absolute bottom-[-10%] left-[40%] animationDelay-06 bg-[#feb06280] hover:bg-[#feb062CC] py-3 px-7 rounded-lg opacity-0"
+                  >
+                    <a href="#">Go Shop</a>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="border-solid border-4 relative h-[650px] min-w-full transition-all before:bg-[url('./src/img/gabi-repaska-9kCh7GNPbHQ-unsplash.jpg')] before:w-full before:h-full overflow-hidden before:absolute before:top-0 before:right-0 before:blur-xl snap-start hidden rounded-xl"
+                rounded-xl
+                data-productHot="3"
+              >
+                <img
+                  src="./src/img/gabi-repaska-9kCh7GNPbHQ-unsplash.jpg"
+                  alt=""
+                  class="object-cover w-full h-full rounded-lg fromRightToLeft"
+                />
+                <div
+                  class="absolute top-[20%] left-20 text-[#dee1ec] text-left p-5 max-w-[40%] min-h-[400px]"
+                >
+                  <h2
+                    class="w-full p-5 opacity-0 text-7xl fromLeftToRight animationDelay-02"
+                  >
+                    3. Lorem ipsum dolor
+                  </h2>
+                  <p
+                    class="w-full p-3 text-2xl opacity-0 fromRightToLeft animationDelay-04"
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quisquam, non fugit! Hic, nobis doloremque veritatis dolorem
+                    nulla corporis atque velit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolorem iste minima magnam
+                    odio cum nobis.
+                  </p>
+                  <button
+                    class="showtop absolute bottom-[-10%] left-[40%] animationDelay-06 bg-[#feb06280] hover:bg-[#feb062CC] py-3 px-7 rounded-lg opacity-0"
+                  >
+                    <a href="#">Go Shop</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
