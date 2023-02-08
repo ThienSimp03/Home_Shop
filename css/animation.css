@@ -14,7 +14,7 @@
   from {
     filter: blur(33px);
     opacity: 0;
-    transform: translate(0, 50%);
+    transform: translate(50%, 0);
   }
   to {
     filter: blur(0);
