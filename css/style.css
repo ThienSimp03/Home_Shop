@@ -1,6 +1,12 @@
+:root {
+  --primary-color: #dee1ec;
+  --primary-bg-1: #1e2a78;
+  --primary-bg-2: #071e3d;
+}
 body {
   font-family: "Great Vibes", cursive;
-  background-color: #00bfff;
+  background-color: #071e3d;
+  /* filter: brightness(0.85); */
 }
 .parallaxScroll.active .fromLeftToRight {
   animation: fromLeftToRight 1s linear 1 forwards;
