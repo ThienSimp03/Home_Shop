@@ -1,0 +1,51 @@
+@keyframes fromLeftToRight {
+  from {
+    filter: blur(33px);
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes fromRightToLeft {
+  from {
+    filter: blur(33px);
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes showtop {
+  from {
+    filter: blur(33px);
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.animationDelay-02 {
+  animation-delay: 0.2s !important;
+}
+.animationDelay-04 {
+  animation-delay: 0.4s !important;
+}
+.animationDelay-06 {
+  animation-delay: 0.6s !important;
+}
+.animationDelay-08 {
+  animation-delay: 0.8s !important;
+}
+.animationDelay-10 {
+  animation-delay: 1s !important;
+}

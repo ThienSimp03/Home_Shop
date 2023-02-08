@@ -1,3 +1,13 @@
 body {
   font-family: "Great Vibes", cursive;
+  background-color: #00bfff;
+}
+.parallaxScroll.active .fromLeftToRight {
+  animation: fromLeftToRight 1s linear 1 forwards;
+}
+.parallaxScroll.active .fromRightToLeft {
+  animation: fromRightToLeft 1s linear 1 forwards;
+}
+.parallaxScroll.active .showtop {
+  animation: showtop 1s linear 1 forwards;
 }
