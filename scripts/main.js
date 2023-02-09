@@ -24,7 +24,7 @@ document.addEventListener("scroll", () => {
   activeMenu();
   // End Nav Active
   // Nav
-  if (window.scrollY > 200) {
+  if (window.scrollY > 150) {
     navgation.classList.add(
       "toFixed",
       "animate__slideInDown",
