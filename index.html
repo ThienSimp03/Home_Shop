@@ -58,11 +58,11 @@
             >
               <a href="#productHot">Sản phẩm nổi bật</a>
             </li>
-            <!-- <li
+            <li
               class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all links animationDelay-04"
             >
-              <a href="#">Sản phẩm bán chạy</a>
-            </li> -->
+              <a href="#listProduct">Sản phẩm hiện có</a>
+            </li>
             <li
               class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all links animationDelay-06"
             >
@@ -225,16 +225,17 @@
       <!-- End List Product Nổi bật -->
       <!-- Danh sách sản phẩm -->
       <div
-        class="bg-[#1e2a78] py-5 border-solid border-[#dee1ec] border-t-2 text-[#dee1ec] parallaxScroll"
+        class="bg-[#1e2a78] py-5 border-solid border-[#dee1ec] border-t-2 text-[#dee1ec] parallaxScroll selector"
+        id="listProduct"
       >
         <div
           class="border-solid border-[#dee1ec] border-b-2 text-center pb-5 text-6xl"
         >
-          <div class="showtop">Danh sách sản phẩm</div>
+          <div class="opacity-0 showtop">Danh sách sản phẩm</div>
         </div>
         <div class="pt-5 mx-auto w-max">
-          <ul class="grid w-full grid-cols-6 gap-5 min-w-[1200px]">
-            <li class="" data-product="1">
+          <ul class="grid w-full grid-cols-6 gap-x-5 gap-y-8 min-w-[1200px]">
+            <li class="opacity-0 showtop" data-product="1">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-1.jpg"
@@ -242,9 +243,14 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
-                  Food: <span class="font-bold">Lorem, ipsum.</span>
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
+                  Food:
+                  <span class="font-bold"
+                    >Lorem, ipsum.aaaaaaaaaaaaaaaaaaaaaa</span
+                  >
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
                   <p class="line-through">20.000vnđ</p>
@@ -257,7 +263,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="2">
+            <li class="opacity-0 showtop animationDelay-02" data-product="2">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-2.jpg"
@@ -265,8 +271,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -280,7 +288,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="3">
+            <li class="opacity-0 showtop animationDelay-04" data-product="3">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-3.jpg"
@@ -288,8 +296,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -303,7 +313,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="4">
+            <li class="opacity-0 showtop animationDelay-06" data-product="4">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-4.jpg"
@@ -311,8 +321,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -326,7 +338,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="5">
+            <li class="opacity-0 showtop animationDelay-08" data-product="5">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-5.jpg"
@@ -334,8 +346,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -349,7 +363,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="6">
+            <li class="opacity-0 showtop animationDelay-10" data-product="6">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-6.jpg"
@@ -357,8 +371,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -372,7 +388,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="7">
+            <li class="opacity-0 showtop animationDelay-10" data-product="7">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-7.jpg"
@@ -380,8 +396,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -395,7 +413,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="8">
+            <li class="opacity-0 showtop animationDelay-08" data-product="8">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-8.jpg"
@@ -403,8 +421,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -418,7 +438,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="9">
+            <li class="opacity-0 showtop animationDelay-06" data-product="9">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-9.jpg"
@@ -426,8 +446,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -441,7 +463,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="10">
+            <li class="opacity-0 showtop animationDelay-04" data-product="10">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-10.jpg"
@@ -449,8 +471,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -464,7 +488,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="11">
+            <li class="opacity-0 showtop animationDelay-02" data-product="11">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-11.jpg"
@@ -472,8 +496,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
@@ -487,7 +513,7 @@
                 </button>
               </div>
             </li>
-            <li class="" data-product="12">
+            <li class="opacity-0 showtop" data-product="12">
               <div class="w-[200px] h-[300px] overflow-hidden rounded-xl">
                 <img
                   src="./image/product-12.jpg"
@@ -495,8 +521,10 @@
                   class="object-cover w-full h-full min-w-full min-h-full transition-all hover:scale-110"
                 />
               </div>
-              <div class="grid grid-cols-1 gap-3 p-3 text-xl">
-                <h2 class="text-2xl text-center">
+              <div class="grid grid-cols-1 gap-3 p-3 text-xl max-w-[200px]">
+                <h2
+                  class="overflow-hidden text-2xl text-center whitespace-nowrap text-ellipsis"
+                >
                   Food: <span class="font-bold">Lorem, ipsum.</span>
                 </h2>
                 <div class="flex gap-3 text-center justify-evenly coast">
