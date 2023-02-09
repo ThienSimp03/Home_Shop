@@ -27,7 +27,8 @@
   <body>
     <header class="parallaxScroll">
       <div
-        class="absolute top-0 left-0 z-10 w-full px-[5%] py-0 grid grid-cols-[200px_auto] gap-3 items-center border-b-[1px] border-solid text-[#dee1ec]"
+        class="absolute top-0 left-0 z-10 w-full px-[5%] py-0 grid grid-cols-[200px_auto] gap-3 items-center border-b-[1px] border-solid text-[#dee1ec] transition-all"
+        id="nav"
       >
         <div class="mx-auto">
           <div class="flex items-center justify-center">
@@ -48,24 +49,24 @@
             class="flex items-center justify-evenly gap-4 min-w-[45%] text-[#dee1ec]"
           >
             <li
-              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all"
+              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all links"
             >
-              <a href="#">Trang chủ</a>
+              <a href="#Home">Trang chủ</a>
             </li>
             <li
-              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all animationDelay-02"
+              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all links animationDelay-02"
             >
-              <a href="#">Sản phẩm nổi bật</a>
+              <a href="#productHot">Sản phẩm nổi bật</a>
             </li>
-            <li
-              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all animationDelay-04"
+            <!-- <li
+              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all links animationDelay-04"
             >
               <a href="#">Sản phẩm bán chạy</a>
-            </li>
+            </li> -->
             <li
-              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all animationDelay-06"
+              class="animate__animated animate__backInLeft hover:text-[#feb062] transition-all links animationDelay-06"
             >
-              <a href="#">Nhà phát triển</a>
+              <a href="#Dev">Nhà phát triển</a>
             </li>
           </ul>
           <div class="flex items-center justify-center gap-x-2">
@@ -83,7 +84,10 @@
           </div>
         </div>
       </div>
-      <div class="relative overflow-hidden h-[110vh] w-full items-center">
+      <div
+        class="relative overflow-hidden h-[110vh] w-full items-center selector"
+        id="Home"
+      >
         <div class="absolute top-0 left-0 w-full h-full r brightness-75">
           <img
             src="./image/masahiro-miyagi-W6rnD_-P3uo-unsplash.jpg"
@@ -98,9 +102,12 @@
         </div>
       </div>
     </header>
-    <div class="container parallaxScroll">
+    <div class="container">
       <!-- List Product Nổi bật -->
-      <div class="relative py-5 w-full max-w-[1280px] mx-auto" id="productHot">
+      <div
+        class="relative py-5 w-full max-w-[1280px] mx-auto parallaxScroll selector"
+        id="productHot"
+      >
         <div
           class="showtop py-[28px] text-center text-5xl font-bold text-[#dee1ec] transition-all underline opacity-0"
         >
@@ -218,9 +225,10 @@
       <!-- End List Product Nổi bật -->
       <!-- Người làm web -->
       <div
-        class="Dev p-10 border-solid border-[#dee1ec] border-y-2 text-[#dee1ec] bg-[#1e2a78] text-center"
+        class="parallaxScroll p-10 border-solid border-[#dee1ec] border-y-2 text-[#dee1ec] bg-[#1e2a78] text-center selector"
+        id="Dev"
       >
-        <div class="pb-10 text-6xl title">
+        <div class="pb-10 text-6xl opacity-0 title showtop">
           Developer by: <span class="font-bold">Thiện</span>
         </div>
         <div class="flex gap-5">
@@ -236,70 +244,64 @@
               class="grid grid-cols-[330px_auto_230px_auto] gap-5 border-b border-solid border-[#dee1ec]"
             >
               <div
-                class="pl-5 text-3xl text-left name border-solid border-r border-[#dee1ec] dev--title"
+                class="pl-5 text-3xl text-left name border-solid border-r border-[#dee1ec] dev--title opacity-0 showtop animationDelay-02"
               >
                 <div class="font-bold">Trần Quang Thiện.</div>
                 <div class="">#Nothing In My Brain.</div>
               </div>
               <div
-                class="text-2xl hobies border-solid border-r border-[#dee1ec] dev--title"
+                class="text-2xl hobies border-solid border-r border-[#dee1ec] dev--title opacity-0 showtop animationDelay-04"
               >
                 <div class="text-3xl font-bold">Sở thích:</div>
                 <div class="">Anime, Manga, Game, Sleep, Eat, Movie.</div>
               </div>
               <div
-                class="text-2xl live border-solid border-r border-[#dee1ec] dev--title"
+                class="text-2xl live border-solid border-r border-[#dee1ec] dev--title opacity-0 showtop animationDelay-06"
               >
                 <div class="text-3xl font-bold">Địa chỉ:</div>
                 <div class="">Đại Từ, Thái Nguyên, Việt Nam.</div>
               </div>
-              <div class="grid grid-cols-3 gap-3 text-2xl linkFl dev--title">
-                <div class="">
+              <div
+                class="grid grid-cols-3 gap-3 text-2xl opacity-0 linkFl dev--title showtop animationDelay-08"
+              >
+                <div class="hover:text-[#feb062]">
                   <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
-                <div class="">
+                <div class="hover:text-[#feb062]">
                   <a href="#"><i class="fa-brands fa-discord"></i></a>
                 </div>
-                <div class="">
+                <div class="hover:text-[#feb062]">
                   <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <div class="">
+                <div class="hover:text-[#feb062]">
                   <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <div class="">
+                <div class="hover:text-[#feb062]">
                   <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
               </div>
             </div>
             <div class="grid grid-cols-[auto_1px_auto] gap-3 p-5 text-left">
-              <div class="dev--title">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                inventore a doloremque voluptatum consectetur doloribus
-                perferendis amet accusamus assumenda, magni recusandae, officiis
-                esse perspiciatis sunt. Totam officiis aperiam quia laudantium.
-                Eos veritatis repellendus sunt, quia ipsam at veniam omnis
-                sapiente doloremque dicta! Inventore harum voluptate, nam
-                facilis nemo error sint blanditiis velit nulla totam quasi,
-                ipsa, natus officiis possimus iusto. Eum fuga, alias suscipit ad
-                veritatis iure exercitationem sapiente perspiciatis vel minima
-                quasi accusamus omnis autem voluptatum est ipsum quas
-                voluptates, odit delectus possimus doloremque, debitis soluta!
-                Nam, quos earum?
+              <div class="opacity-0 dev--title showtop animationDelay-10">
+                <div class="">Giới thiệu bản thân:</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+                  inventore a doloremque voluptatum consectetur doloribus
+                  perferendis amet accusamus assumenda, magni recusandae,
+                  officiis esse perspiciatis sunt. Totam officiis aperiam quia
+                  laudantium. Eos veritatis repellendus sunt, quia ipsam at
+                  veniam omnis sapiente doloremque dicta! Inventore harum
+                  voluptate, nam facilis nemo error sint blanditiis velit nulla
+                  totam quasi, ipsa, natus officiis possimus iusto. Eum fuga,
+                  alias suscipit ad veritatis iure exercitationem sapiente
+                  perspiciatis vel minima quasi accusamus omnis autem voluptatum
+                  est ipsum quas voluptates, odit delectus possimus doloremque,
+                  debitis soluta! Nam, quos earum?
+                </p>
               </div>
               <div class="border-solid border w-0 border-[#dee1ec]"></div>
-              <div class="dev--title">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus libero voluptatem recusandae animi consequuntur
-                excepturi consectetur architecto voluptatibus quos. Nemo
-                asperiores illum eaque nobis ad natus. Dolor nemo provident
-                laudantium. Expedita quo nemo, neque ipsam corrupti illo
-                maiores? Facere accusantium quae aliquid natus facilis sequi
-                sunt ipsum deserunt id esse dolorem officia dolores dolore neque
-                quam, doloribus voluptates accusamus eos. Repellat corporis
-                labore ullam eius dolorem amet deserunt voluptatibus?
-                Praesentium, minima totam blanditiis laboriosam quasi recusandae
-                voluptatum temporibus quibusdam soluta nam quisquam nemo ratione
-                incidunt officiis officia fugiat adipisci iste.
+              <div class="opacity-0 dev--title showtop animationDelay-12">
+                <div class="">Cuộc sống hằng ngày</div>
               </div>
             </div>
           </div>

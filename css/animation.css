@@ -52,3 +52,15 @@
 .animationDelay-12 {
   animation-delay: 1.2s !important;
 }
+.animationDelay-14 {
+  animation-delay: 1.4s !important;
+}
+.animationDelay-16 {
+  animation-delay: 1.6s !important;
+}
+.animationDelay-18 {
+  animation-delay: 1.8s !important;
+}
+.animationDelay-20 {
+  animation-delay: 2s !important;
+}

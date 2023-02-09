@@ -2,11 +2,15 @@
   --primary-color: #dee1ec;
   --primary-bg-1: #1e2a78;
   --primary-bg-2: #071e3d;
+  --primary-bg-3: #feb062;
 }
 body {
   font-family: "Great Vibes", cursive;
   background-color: #071e3d;
   /* filter: brightness(0.85); */
+}
+.activeNav {
+  color: var(--primary-bg-3);
 }
 .parallaxScroll.active .fromLeftToRight {
   animation: fromLeftToRight 1s linear 1 forwards;
@@ -16,4 +20,9 @@ body {
 }
 .parallaxScroll.active .showtop {
   animation: showtop 1s linear 1 forwards;
+}
+.toFixed {
+  position: fixed !important;
+  top: 0;
+  background-color: #071E3DE6;
 }
