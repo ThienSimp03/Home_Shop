@@ -2,10 +2,11 @@
   --primary-color: #dee1ec;
   --primary-bg-1: #1e2a78;
   --primary-bg-2: #071e3d;
-  --primary-bg-3: #feb062;
+  --primary-bg-3: #2f89fc;
 }
 body {
-  font-family: "Great Vibes", cursive;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Great Vibes", cursive; */
   background-color: #071e3d;
   /* filter: brightness(0.85); */
 }
@@ -24,5 +25,5 @@ body {
 .toFixed {
   position: fixed !important;
   top: 0;
-  background-color: #071E3DE6;
+  background-color: #071e3de6;
 }

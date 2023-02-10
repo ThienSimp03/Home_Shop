@@ -2,6 +2,7 @@ let parallax = document.querySelectorAll(".parallaxScroll");
 let listProductHot = document.querySelectorAll(
   "#itemHotProduct div[data-productHot]"
 );
+// listProductHot[0].style.display = "block";
 let productHot = document.querySelector("#productHot");
 let navgation = document.querySelector("#nav");
 let checkProductHotActive = false;
@@ -53,7 +54,7 @@ let navgationActive = document.querySelectorAll("#nav .links");
 let selector = document.querySelectorAll(".selector");
 function activeMenu() {
   let length = selector.length;
-  while (--length && selector[length].offsetTop > window.scrollY + 100) {}
+  while (--length && selector[length].offsetTop > window.scrollY + 280) {}
   navgationActive.forEach((item) => {
     item.classList.remove("activeNav");
   });

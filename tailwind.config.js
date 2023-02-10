@@ -33,6 +33,9 @@ module.exports = {
           },
         },
       },
+      fontFamily: {
+        great: ["Great Vibes"],
+      },
     },
   },
   plugins: [],
